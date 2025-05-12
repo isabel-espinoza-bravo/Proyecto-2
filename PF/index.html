@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Encuestas</title>
+</head>
+<body>
+  <h1>Crear Nueva Encuesta</h1>
+  <form id="formularioEncuesta">
+    <label for="pregunta">Pregunta:</label><br>
+    <input type="text" id="pregunta" required><br><br>
+
+    <label>Opciones:</label><br>
+    <input type="text" class="opcion" placeholder="Opción 1" required><br>
+    <input type="text" class="opcion" placeholder="Opción 2" required><br>
+    <input type="text" class="opcion" placeholder="Opción 3"><br>
+    <input type="text" class="opcion" placeholder="Opción 4"><br><br>
+
+    <button type="submit">Crear Pregunta</button>
+  </form>
+
+  <hr>
+  <h2>Preguntas disponibles</h2>
+  <div id="surveyContainer"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
